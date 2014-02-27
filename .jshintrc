@@ -1,0 +1,11 @@
+{
+
+  "predef": [
+    "it",
+    "exports",
+    "define",
+    "require",
+    "describe",
+    "requirejs"
+  ]
+}

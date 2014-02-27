@@ -1,0 +1,17 @@
+{
+  "name": "algorithm",
+  "version": "0.0.0",
+  "description": "alogrithm practice",
+  "main": "",
+  "devDependencies": {
+    "should": "*",
+    "expect.js": "*",
+    "mocha": "*",
+    "lodash": "*"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
