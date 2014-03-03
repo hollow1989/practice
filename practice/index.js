@@ -3,6 +3,7 @@
 var _ = require('lodash');
 
 var folderPass = [
+  'lib',
   'challenge2'
 ];
 
