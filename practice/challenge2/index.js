@@ -1,3 +1,16 @@
 'use strict';
 
-exports.chapter1 = require('./chapter1');
+var _ = require('lodash');
+var chapter = [
+  'chapter1'
+];
+
+exports.challenge2 = {
+  challenge2: _.reduce(chapter, function(m, c) {
+    var e = require('./' + c);
+    return _.reduce(e, function(m, f, c) {
+      m[c] = f;
+      return m;
+    }, m);
+  }, {})
+};

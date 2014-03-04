@@ -1,3 +1,6 @@
 'use strict';
 
-exports.sort = require('./sort');
+exports.lib = {
+  func: require('./func'),
+  sort: require('./sort')
+};

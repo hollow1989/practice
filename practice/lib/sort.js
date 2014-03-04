@@ -1,7 +1,5 @@
 'use strict';
 
-var _ = require('lodash');
-
 exports.quickSort = function(array) {
 
   return sort(array, 0, array.length - 1);
@@ -11,7 +9,7 @@ exports.quickSort = function(array) {
       return array;
     }
     var p = pivot(array, i, j);
-    if (_.isNumber(p)) {
+    if (!isNaN(p)) {
       var k = partition(array, i, j, array[p]);
       sort(array, i, k - 1);
       sort(array, k, j);
@@ -56,3 +54,32 @@ function partition(array, i, j, key) {
   return array;
 }
 
+
+exports.integerSort = function(array) {
+
+  var dummy = {
+    minus: [],
+    plus: []
+  };
+  array.forEach(function(n) {
+    if (n < 0) {
+      dummy.minus[-n] = ++dummy.minus[-n] || 1;
+    } else {
+      dummy.plus[n] = ++dummy.plus[n] || 1;
+    }
+  });
+  var result = [];
+  dummy.minus.forEach(function(n, i) {
+    while(0 < n--) {
+      result.push(-i);
+    }
+  });
+  result.reverse();
+  dummy.plus.forEach(function(n, i) {
+    while(0 < n--) {
+      result.push(i);
+    }
+  });
+
+  return result;
+};
