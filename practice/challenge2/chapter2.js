@@ -1,6 +1,9 @@
 'use strict';
 
-exports.lake = function(n, m, lake, callback) {
+exports.lake = function(N, M, lake) {
+  console.log(N, M, lake);
+
+  return;
 };
 
 // var N = 10,

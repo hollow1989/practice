@@ -2,7 +2,8 @@
 
 var _ = require('lodash');
 var chapter = [
-  'chapter1'
+  'chapter1',
+  'chapter2'
 ];
 
 exports.challenge2 = {
