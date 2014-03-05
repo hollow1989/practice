@@ -22,7 +22,7 @@ describe('#chapter2', function() {
           ['.','.','W','.','.','.','.','.','.','.','W','.']
       ];
       var result = practice.challenge2.lake(N, M, lake);
-
+      expect(result).to.be(3);
       done();
     });
   });
