@@ -15,8 +15,8 @@ exports.lake = function(N, M, LAKE) {
   }
   return num;
 
-  function check(n, m, lack) {
-    return lack[n][m] === 'W';
+  function check(n, m, lake) {
+    return lake[n][m] === 'W';
   }
 
   function bury(n, m, lake) {
